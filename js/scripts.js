@@ -1,7 +1,10 @@
 $(document).ready(function () {
-    $('.mobile-menu').on('click', function() {
-        $('.navigation .menu').slideToggle(400);
-    });
+    $('.menu-button').on('click', function() {
+        $('.navigation-wrapper').addClass('active');
+    })
+    $('.close-menu').on('click', function() {
+        $('.navigation-wrapper').removeClass('active');
+    })
 });
 
 
