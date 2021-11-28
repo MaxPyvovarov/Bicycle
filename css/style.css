@@ -53,6 +53,10 @@ input {
     position: relative;
 }
 
+.header .banner {
+    line-height: 0;
+}
+
 .header .navigation {
     position: absolute;
     left: 0;
@@ -212,6 +216,7 @@ input {
 .col-100-img {
     line-height: 0;
     width: 100%;
+    position: relative;
 }
 
 .col-100-img img {
@@ -227,7 +232,30 @@ input {
 
 .col-text p {
     text-align: justify;
-    padding-bottom: 35px;
+    padding: 10px 0px 35px;
+}
+
+.col-text img {
+    margin-bottom: 10px;
+}
+
+.col-33 .col-text::after {
+    display: block;
+    content: "";
+    width: 50px;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 auto;
+}
+
+.triangle {
+    position: relative;
+    left: 48%;
+    bottom: -10px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
 }
 
 .centered {
