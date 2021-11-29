@@ -373,6 +373,7 @@ input {
 }
 
 /* MEDIA */
+
 @media (max-width: 1024px) {
     .logo-mobile, .menu-button, .close-menu {
         display: block;
