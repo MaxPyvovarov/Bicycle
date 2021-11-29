@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/style.css">
   <title>Bicycle</title>
 </head>
 <body>
@@ -40,10 +41,9 @@
     </header>
     <main>
         <section id="about" class="about">
-            
             <img src="./images/icon-about.png" alt="">
             <h2 class="title-18">A new generation of vintage bike</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </section>
         <section id="work">
                 <div class="row">
@@ -57,7 +57,6 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, architecto repudiandae. Nemo quo cum consequatur, qui nihil ad, officia quisquam magnam sapiente, dolore blanditiis. Harum delectus expedita saepe tenetur ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, itaque?</p>
                         </div>
                         <div class="col-100-img">
-                            <div class="triangle"></div>
                             <img class="col-100" src="./images/work2.jpg" alt="bicycle">
                         </div>
                     </div>
@@ -70,7 +69,6 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, architecto repudiandae. Nemo quo cum consequatur, qui nihil ad, officia quisquam magnam sapiente, dolore blanditiis. Harum delectus expedita saepe tenetur ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, itaque?</p>
                         </div>
                         <div class="col-100-img">
-                            <div class="triangle"></div>
                             <img src="./images/work3.jpg" alt="bicycle">
                         </div>
                     </div>
@@ -89,16 +87,66 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, architecto repudiandae. Nemo quo cum consequatur, qui nihil ad, officia quisquam magnam sapiente, dolore blanditiis. Harum delectus expedita saepe tenetur ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, itaque?</p>
                         </div>
                         <div class="col-100-img">
-                            <div class="triangle"></div>
                             <img src="./images/work6.jpg" alt="bicycle">
                         </div>
                     </div>
                     <div class="col-33 bg-image" style="background-image: url('./images/work7.jpg');"></div>
                 </div>
+                <div class="reviews">
+                    <div class="container">
+                        <div class="swiper swiper-reviews">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <img src="./images/twitter.png" alt="twitter">
+                                  <h4>AOD New York @aod<span>/ 35min</span></h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+                                </div>
+                                    <div class="swiper-slide">
+                                    <img src="./images/twitter.png" alt="twitter">
+                                    <h4>AOD New York @aod<span>/ 21min</span></h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita est veniam culpa, nulla eligendi vel eveniet architecto placeat tempora vitae fugiat rem.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/twitter.png" alt="twitter">
+                                    <h4>AOD New York @aod<span>/ 8min</span></h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore explicabo iusto commodi nam autem expedita neque quae quasi debitis doloribus!</p>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+                </div>
         </section>
         <section id="shop">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-33">
+                        <div class="row">
+                            <a href="#" class="col-50" style="background-image: url(./images/shop1.jpg);"></a>
+                            <a href="#" class="col-50" style="background-image: url(./images/shop2.jpg);"></a>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="col-100" style="background-image: url(./images/shop3.jpg);">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <div class="row">
+                            <a href="#" class="col-50 col-fullheight" style="background-image: url(./images/shop4.jpg);"></a>
+                            <a href="#" class="col-50 col-fullheight" style="background-image: url(./images/shop5.jpg);"></a>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <div class="row">
+                            <a href="#" class="col-100" style="background-image: url(./images/shop6.jpg);"></a>
+                        </div>
+                        <div class="row">
+                            <a href="" class="col-50" style="background-image: url(./images/shop7.jpg);"></a>
+                            <a href="" class="col-50" style="background-image: url(./images/shop8.jpg);"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -114,6 +162,7 @@
     </footer>
   </div>
 <script src="./js/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="./js/scripts.js"></script>
 </body>
 </html>
