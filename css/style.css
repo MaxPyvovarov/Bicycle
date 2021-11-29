@@ -343,8 +343,6 @@ input {
 }
 
 /* SHOP SECTION */
-
-
 #shop a[class^='col-'] {
     height: 265px;
     background-position: 50% 50%;
