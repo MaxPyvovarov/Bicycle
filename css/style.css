@@ -565,7 +565,7 @@ input {
     }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width:576px) {
     .close-menu {
         width: 48px;
     }
