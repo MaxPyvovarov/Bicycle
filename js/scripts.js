@@ -6,14 +6,13 @@ $(document).ready(function () {
     $('.close-menu').on('click', function() {
         $('.navigation-wrapper').removeClass('active');
     })
+    //Smooth scroll
     $("#menu").on("click","a", function (event) {
                 event.preventDefault();
                 var id  = $(this).attr('href'),
                 top = $(id).offset().top;
                 $('body,html').animate({scrollTop: top}, 700);
             });
-        
-
     //Reviews slider
     const reviewsSlider = new Swiper('.swiper-reviews', {
         direction: 'horizontal',
