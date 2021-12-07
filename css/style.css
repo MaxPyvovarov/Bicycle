@@ -76,7 +76,6 @@ input {
 
 .header .banner {
     line-height: 0;
-    height: 800px;
 }
 
 .header .navigation {
@@ -200,7 +199,7 @@ input {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 0.2em;
 }
   
 .header .banner img {
@@ -226,16 +225,17 @@ input {
     margin: 0 auto;
     width: 52px;
     height: auto;
-    padding: 40px 0;
+    padding: 118px 0 26px;
 }
 
 .about p {
-    margin-top: 40px;
+    padding: 19px 0 0;
     font-size: 18px;
-    width: 60%;
+    width: 55%;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    line-height: 1.8;
 }
 
 .logo-mobile img {
@@ -453,8 +453,8 @@ input {
 .shop-btn a {
     display: block;
     font-size: 14px;
-    letter-spacing: 5px;
-    padding: 20px 55px;
+    letter-spacing: 0.2em;
+    padding: 10px 55px;
     color: #fff;
     text-transform: uppercase;
     -webkit-transition: .5s ease;
@@ -478,7 +478,7 @@ input {
 }
 
 .contact-logo {
-    margin: 0 0 35px;
+    margin: 0 0 22px;
 }
 
 #contact p {
@@ -667,6 +667,25 @@ input {
     }
 }
 
+@media (max-width: 768px)  { 
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .col + .col{
+        margin: 60px 0 0;
+    }
+
+    .footer .socials {
+        flex-direction: row;
+    }
+
+    .socials a img {
+        width: 40px;
+    }
+}
+
 @media (max-width: 576px) {
     .about {
         display: block;
@@ -747,6 +766,16 @@ input {
 
     #shop .row .col-33:nth-child(2){
         width: 100%;
+    }
+
+    #contact form {
+        flex-direction: column;
+    }
+
+    #contact .button {
+        margin: 15px 0 0;
+        width: 100%;
+        align-self: center;
     }
 }
 
