@@ -464,7 +464,7 @@ input {
 
 .shop-btn:hover {
     background: rgba(100, 194, 158, 0.8);
-    border: 1px solid #000;
+    border: 1px solid rgba(100, 194, 158, 0.8);
 }
 
 .shop-btn a:hover {
@@ -567,6 +567,11 @@ input {
 
 .footer img {
     vertical-align: middle;
+    transition: .4s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.2);
 }
 
 .footer .socials a + a img {
