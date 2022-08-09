@@ -1,30 +1,36 @@
-$(document).ready(function () {
-    //Mobile menu
-    $('.menu-button').on('click', function() {
-        $('.navigation-wrapper').addClass('active');
-    })
-    $('.close-menu').on('click', function() {
-        $('.navigation-wrapper').removeClass('active');
-    })
-    //Smooth scroll
-    $("#menu").on("click","a", function (event) {
-                event.preventDefault();
-                var id  = $(this).attr('href'),
-                top = $(id).offset().top;
-                $('body,html').animate({scrollTop: top}, 700);
-            });
-    //Reviews slider
-    const reviewsSlider = new Swiper('.swiper-reviews', {
-        direction: 'horizontal',
-        loop: true,
+window.addEventListener('DOMContentLoaded', () => {
+	//Mobile menu
+	const menuButton = document.querySelector('.menu-button'),
+		closeMenuButton = document.querySelector('.close-menu'),
+		navWrapper = document.querySelector('.navigation-wrapper');
 
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
+	menuButton.addEventListener('click', () => {
+		navWrapper.classList.add('active');
+	});
+
+	closeMenuButton.addEventListener('click', () => {
+		navWrapper.classList.remove('active');
+	});
+
+	//Smooth scroll
+	document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth',
+			});
+		});
+	});
+
+	//Reviews slider
+	const reviewsSlider = new Swiper('.swiper-reviews', {
+		direction: 'horizontal',
+		loop: true,
+
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
 });
-
-
-
-
